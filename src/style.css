@@ -11,7 +11,8 @@ body {
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  padding-left: 4rem;
 }
 
 main {
@@ -30,7 +31,7 @@ main {
   border: 1px solid black;
 }
 
-.scores {
+.score-list {
   list-style: none;
   line-height: 1.8rem;
   padding-left: 0.5rem;
@@ -57,7 +58,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 
 .vertical-gap {
