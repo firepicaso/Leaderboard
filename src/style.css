@@ -42,13 +42,13 @@ main {
 .score-list {
   list-style: none;
   line-height: 1.8rem;
+
   /* padding-left: 0.5rem; */
   border: 2px solid rgba(56, 183, 237, 0.25);
 }
 
 .list {
   padding-left: 1rem;
-  
 }
 
 .list:nth-child(even) {
