@@ -114,10 +114,15 @@ footer {
     gap: 4rem;
   }
 
+  header {
+    padding-left: 15rem;
+  }
+
   header h1 {
     font-size: 3rem;
     padding-top: 2rem;
     padding-left: 2rem;
+    text-align: left;
   }
 
   .recent-scores {
