@@ -34,7 +34,7 @@ const refreshScores = async () => {
 
   scoreList.innerHTML = '';
   scores.forEach((score) => {
-    const scoreLine = `<li class="score-list">${score.user}: ${score.score}</li>`;
+    const scoreLine = `<li class="list">${score.user}: ${score.score}</li>`;
     scoreList.insertAdjacentHTML('beforeend', scoreLine);
   });
 };
