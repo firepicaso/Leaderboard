@@ -9,6 +9,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 2rem;
   background-color: azure;
+  background-image: url("background.png");
 }
 
 header h1 {
