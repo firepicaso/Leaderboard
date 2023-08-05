@@ -1,48 +1,67 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2rem;
-  background-color: azure;
+  color: rgb(85, 85, 85);
+  padding: 1rem;
+  background-image: url("background_small.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 header h1 {
-  font-size: 3rem;
-  padding-left: 4rem;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
 }
 
 main {
   display: flex;
-  justify-content: center;
-  padding-top: 5rem;
-  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .recent-scores {
   display: flex;
-  gap: 1rem;
+  gap: 3.5rem;
 }
 
 .score-div {
-  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.65);
 }
 
 .score-list {
   list-style: none;
   line-height: 1.8rem;
-  padding-left: 0.5rem;
+
+  /* padding-left: 0.5rem; */
+  border: 2px solid rgba(56, 183, 237, 0.25);
+}
+
+.list {
+  padding-left: 1rem;
+}
+
+.list:nth-child(even) {
+  background-color: rgba(56, 204, 237, 0.1);
 }
 
 .button {
-  background-color: transparent;
+  background-color: rgb(237, 110, 56);
+  color: white;
   cursor: pointer;
-  padding: 5px;
   width: 5rem;
+  height: 1.5rem;
+  border: none;
 }
 
 .submit {
@@ -55,13 +74,70 @@ main {
   gap: 1rem;
 }
 
+input {
+  background-color: rgba(204, 240, 255, 0.804);
+  color: black;
+  border: none;
+  height: 1.5rem;
+  width: 18rem;
+  text-align: center;
+}
+
 footer {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
 }
 
-.vertical-gap {
-  margin-top: 1rem;
+.vertical-gap-small {
+  margin-top: 0.5rem;
+}
+
+.vertical-gap-medium {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 4rem;
+  }
+
+  header {
+    padding-left: 15rem;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .recent-scores {
+    gap: 8rem;
+  }
+
+  .score-div {
+    background-color: rgba(255, 255, 255, 0.65);
+  }
+
+  input {
+    background-color: rgba(255, 255, 255, 0.65);
+    border: 1px solid black;
+    height: 1.5rem;
+    width: 18rem;
+    text-align: center;
+  }
 }
