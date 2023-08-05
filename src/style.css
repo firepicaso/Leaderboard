@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   padding: 2rem;
+  background-color: azure;
 }
 
 header h1 {
